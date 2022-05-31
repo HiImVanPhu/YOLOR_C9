@@ -7,6 +7,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 while True:
     try:
         s.connect((IP, PORT))
+        print('connect successfully')
         break
     except:
         print('connect failed')
